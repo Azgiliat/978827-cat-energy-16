@@ -8,13 +8,25 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="main-logo page-header__main-logo main-logo--mobile" src="" alt="Логотип магазина">
-      <div class="shop-name page-header__shop-name">
-        <span class="shop-name__CAT">CAT</span>
-        <span class="shop-name__ENERGY">ENERGY<span>
-      </div>
+      <a class="page-header__link page-header__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
+        <img class="main-logo page-header__main-logo main-logo--mobile" src="" alt="Логотип магазина">
+      </a>
+      <a class="page-header__link page-header__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
+        <img class="shop-name page-header__shop-name shop-name--mobile" src="" alt="Название магазина">
+      </a>
       <nav class="main-nav page-header__main-nav">
         <button class="main-nav__button" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -22,94 +34,115 @@
       <section class="products page-main__products">
         <h2 class="products__header visually-hidden">Примеры нашей продукции</h2>
         <section class="product-card products__product-card">
-          <a class=product-card__link">
+          <a class="product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
           <a class="product-card__link">
             <img class="product-card__img" src="" alt="Изображение товара">
           </a>
-          <div class="product-card__description">
-          </div>
-          <button class="button" type="button">ЗАКАЗАТЬ</button>
+          <p class="product-card__description">
+            Объем 500 г
+            Вкус Курица
+            Цена  700 Р.
+          </p>
+          <a class="button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
-          <a class=product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 1000 Г</h3>
-          </a>
           <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
-          </a>
-          <div class="product-card__description">
-          </div>
-          <button class="button" type="button">ЗАКАЗАТЬ</button>
-        </section>
-        <section class="product-card products__product-card">
-          <a class=product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
           <a class="product-card__link">
             <img class="product-card__img" src="" alt="Изображение товара">
           </a>
-          <div class="product-card__description">
-          </div>
-          <button class="button" type="button">ЗАКАЗАТЬ</button>
+          <p class="product-card__description">
+            Объем 1000 г
+            Вкус Курица
+            Цена  1000 Р.
+          </p>
+          <a class="button" href="chiken-1000.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
-          <a class=product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 1000 Г</h3>
-          </a>
           <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
-          </a>
-          <div class="product-card__description">
-          </div>
-          <button class="button" type="button">ЗАКАЗАТЬ</button>
-        </section>
-        <section class="product-card products__product-card">
-          <a class=product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
           <a class="product-card__link">
             <img class="product-card__img" src="" alt="Изображение товара">
           </a>
-          <div class="product-card__description">
-          </div>
-          <button class="button" type="button">ЗАКАЗАТЬ</button>
+          <p class="product-card__description">
+            Объем 500 г
+            Вкус Рыба
+            Цена  700 Р.
+          </p>
+          <a class="button" href="fish-500.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
-          <a class=product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 1000 Г</h3>
-          </a>
           <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
-          </a>
-          <div class="product-card__description">
-          </div>
-          <button class="button" type="button">ЗАКАЗАТЬ</button>
-        </section>
-        <section class="product-card products__product-card">
-          <a class=product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
           <a class="product-card__link">
             <img class="product-card__img" src="" alt="Изображение товара">
           </a>
-          <div class="product-card__description">
-          </div>
-          <button class="button" type="button">ЗАКАЗАТЬ</button>
+          <p class="product-card__description">
+            Объем 1000 г
+            Вкус Рыба
+            Цена  1000 Р.
+          </p>
+          <a class="button" href="fish-1000.html">ЗАКАЗАТЬ</a>
         </section>
-        <p class=products__more-products>показать ещё 100500 товаров</p>
-        <p class=products__more-tastes>На самом деле вкусов намного больше!</p>
-        <button class="button products__button products__button--grey" type="button">показать все</button>
+        <section class="product-card products__product-card">
+          <a class="product-card__link">
+            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+          </a>
+          <a class="product-card__link">
+            <img class="product-card__img" src="" alt="Изображение товара">
+          </a>
+          <p class="product-card__description">
+            Объем 500 г
+            Вкус Гречка
+            Цена  400 Р.
+          </p>
+          <a class="button" href="buckwheat-500.html">ЗАКАЗАТЬ</a>
+        </section>
+        <section class="product-card products__product-card">
+          <a class="product-card__link">
+            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+          </a>
+          <a class="product-card__link">
+            <img class="product-card__img" src="" alt="Изображение товара">
+          </a>
+          <p class="product-card__description">
+            Объем 1000 г
+            Вкус Гречка
+            Цена  700 Р.
+          </p>
+          <a class="button" href="buckwheat-1000.html">ЗАКАЗАТЬ</a>
+        </section>
+        <section class="product-card products__product-card">
+          <a class="product-card__link">
+            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+          </a>
+          <a class="product-card__link">
+            <img class="product-card__img" src="" alt="Изображение товара">
+          </a>
+          <p class="product-card__description">
+            Объем 500 г
+            Вкус Рис
+            Цена  500 Р.
+          </p>
+          <a class="button" href="rise-500.html">ЗАКАЗАТЬ</a>
+        </section>
+        <p class="products__more-products">показать ещё 100500 товаров</p>
+        <p class="products__more-tastes">На самом деле вкусов намного больше!</p>
+        <a class="button products__button products__button--grey" href="catalog.html">показать все</a>
       </section>
       <section class="additional-products">
+        <h2 class="additional-products__title"></h2>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="shop-name page-footer__shop-name">
-        <span class="shop-name__CAT shop-name__CAT--big-font">CAT</span>
-        <span class="shop-name__ENERGY shop-name__ENERGY--big-font">ENERGY<span>
-      </div>
+      <a class="page-footer__link page-footer__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
+        <img class="shop-name page-footer__shop-name" src="" alt="Название магазина">
+      </a>
       <div class="social-networks page-footer__social-networks">
         <ul class="social-networks__list">
           <li class="social-networks__item">
