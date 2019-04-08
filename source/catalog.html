@@ -5,17 +5,20 @@
     <meta name="keywords" content="Cat-Energy Cat Котэ Кот Еда Котов магазин">
     <meta name="description" content="Каталог товаров магазина Cat Energy">
     <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__link page-header__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
-        <img class="main-logo page-header__main-logo main-logo--mobile" src="" alt="Логотип магазина">
-      </a>
-      <a class="page-header__link page-header__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
-        <img class="shop-name page-header__shop-name shop-name--mobile" src="" alt="Название магазина">
-      </a>
       <nav class="main-nav page-header__main-nav">
-        <button class="main-nav__button" type="button">Открыть меню</button>
+        <a class="page-header__link" href="index.html" aria-label="Ссылка на главную страницу магазина">
+          <img class="main-logo page-header__main-logo" src="../../img/logo-mobile.svg" alt="Логотип магазина">
+        </a>
+        <button class="main-nav__button" type="button">
+          Открыть меню
+          <span class="main-nav__burger-element"></span>
+          <span class="main-nav__burger-element"></span>
+          <span class="main-nav__burger-element"></span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">главная</a>
@@ -29,121 +32,135 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="main-header">Каталог продукции</h1>
-      <section class="products page-main__products">
+    <main class="page-catalog">
+      <h1 class="page-catalog__title">Каталог продукции</h1>
+      <section class="products page-catalog__products">
         <h2 class="products__header visually-hidden">Примеры нашей продукции</h2>
         <section class="product-card products__product-card">
           <a class="product-card__link">
+            <img class="product-card__img" src="img/chicken-small-mobile@1x.jpg" alt="Изображение товара">
+          </a>
+          <div class="product-card__text-info">
+          <a class="product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
-          <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
-          </a>
-          <p class="product-card__description">
+          <div class="product-card__description">
             <table class="product-card__table">
               <tr class="product-card__string"><td class="product-card__cell">Объем</td> <td class="product-card__cell">500 г</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Вкус</td> <td class="product-card__cell">Курица</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Цена</td> <td class="product-card__cell">700 Р.</td></tr>
             </table>
-          </p>
-          <a class="button" href="chiken-500.html">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+          <a class="button product-card__button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+            <img class="product-card__img" src="img/chicken-big-mobile@1x.jpg" alt="Изображение товара">
           </a>
+          <div class="product-card__text-info">
           <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
+            <h3 class="product-card__header">CAT ENERGY PRO 1000 Г</h3>
           </a>
-          <p class="product-card__description">
+          <div class="product-card__description">
             <table class="product-card__table">
               <tr class="product-card__string"><td class="product-card__cell">Объем</td> <td class="product-card__cell">1000 г</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Вкус</td> <td class="product-card__cell">Курица</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Цена</td> <td class="product-card__cell">1000 Р.</td></tr>
             </table>
-          </p>
-          <a class="button" href="chiken-1000.html">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+          <a class="button product-card__button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
           <a class="product-card__link">
+            <img class="product-card__img" src="img/fish-small-mobile@1x.jpg" alt="Изображение товара">
+          </a>
+          <div class="product-card__text-info">
+          <a class="product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
-          <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
-          </a>
-          <p class="product-card__description">
+          <div class="product-card__description">
             <table class="product-card__table">
               <tr class="product-card__string"><td class="product-card__cell">Объем</td> <td class="product-card__cell">500 г</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Вкус</td> <td class="product-card__cell">Рыба</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Цена</td> <td class="product-card__cell">700 Р.</td></tr>
             </table>
-          </p>
-          <a class="button" href="fish-500.html">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+          <a class="button product-card__button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+            <img class="product-card__img" src="img/fish-small-mobile@1x.jpg" alt="Изображение товара">
           </a>
+          <div class="product-card__text-info">
           <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
+            <h3 class="product-card__header">CAT ENERGY PRO 1000 Г</h3>
           </a>
-          <p class="product-card__description">
+          <div class="product-card__description">
             <table class="product-card__table">
               <tr class="product-card__string"><td class="product-card__cell">Объем</td> <td class="product-card__cell">1000 г</td></tr>
-              <tr class="product-card__string"><td class="product-card__cell">Вкус</td> <td class="product-card__cell">Курица</td></tr>
+              <tr class="product-card__string"><td class="product-card__cell">Вкус</td> <td class="product-card__cell">Рыба</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Цена</td> <td class="product-card__cell">1000 Р.</td></tr>
             </table>
-          </p>
-          <a class="button" href="fish-1000.html">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+          <a class="button product-card__button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
           <a class="product-card__link">
+            <img class="product-card__img" src="img/buckwheat-big-mobile@1x.jpg" alt="Изображение товара">
+          </a>
+          <div class="product-card__text-info">
+          <a class="product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
-          <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
-          </a>
-          <p class="product-card__description">
+          <div class="product-card__description">
             <table class="product-card__table">
               <tr class="product-card__string"><td class="product-card__cell">Объем</td> <td class="product-card__cell">500 г</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Вкус</td> <td class="product-card__cell">Гречка</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Цена</td> <td class="product-card__cell">400 Р.</td></tr>
             </table>
-          </p>
-          <a class="button" href="buckwheat-500.html">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+          <a class="button product-card__button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
           <a class="product-card__link">
+            <img class="product-card__img" src="img/buckwheat-big-mobile@1x.jpg" alt="Изображение товара">
+          </a>
+          <div class="product-card__text-info">
+          <a class="product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
-          <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
-          </a>
-          <p class="product-card__description">
+          <div class="product-card__description">
             <table class="product-card__table">
               <tr class="product-card__string"><td class="product-card__cell">Объем</td> <td class="product-card__cell">1000 г</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Вкус</td> <td class="product-card__cell">Гречка</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Цена</td> <td class="product-card__cell">700 Р.</td></tr>
             </table>
-          </p>
-          <a class="button" href="buckwheat-1000.html">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+          <a class="button product-card__button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
         <section class="product-card products__product-card">
           <a class="product-card__link">
+            <img class="product-card__img" src="img/rice-small-mobile@1x.jpg" alt="Изображение товара">
+          </a>
+          <div class="product-card__text-info">
+          <a class="product-card__link">
             <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
           </a>
-          <a class="product-card__link">
-            <img class="product-card__img" src="" alt="Изображение товара">
-          </a>
-          <p class="product-card__description">
+          <div class="product-card__description">
             <table class="product-card__table">
               <tr class="product-card__string"><td class="product-card__cell">Объем</td> <td class="product-card__cell">500 г</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Вкус</td> <td class="product-card__cell">Рис</td></tr>
               <tr class="product-card__string"><td class="product-card__cell">Цена</td> <td class="product-card__cell">500 Р.</td></tr>
             </table>
-          </p>
-          <a class="button" href="rise-500.html">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+          <a class="button product-card__button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
         <p class="products__more-products">показать ещё 100500 товаров</p>
         <p class="products__more-tastes">На самом деле вкусов намного больше!</p>
@@ -154,8 +171,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__link page-footer__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
-        <img class="shop-name page-footer__shop-name" src="" alt="Название магазина">
+      <a class="page-footer__link page-footer__link" href="index.html" aria-label="Ссылка на главную страницу магазина">
+        <img class="shop-name-only page-footer__shop-name-only" src="../../img/logo-footer.svg" alt="Название магазина">
       </a>
       <div class="social-networks page-footer__social-networks">
         <ul class="social-networks__list">
@@ -172,7 +189,7 @@
       </div>
       <div class="developer page-footer__developer">
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <img class="dev-logo developer__dev-logo" src="" alt="Логотип HTML Academy">
+        <img class="dev-logo developer__dev-logo" src="../../img/htmlacademy.svg" alt="Логотип HTML Academy">
       </div>
     </footer>
   </body>

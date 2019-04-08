@@ -1,0 +1,23 @@
+@main-font: Oswald, Arial, sans-serif;
+@main-font-regular: Oswald, Arial, sans-serif;
+@sub-font: Arial, sans-serif;
+.allFontsWoff2 (@i) when (@i < 10) {
+  @font-face {
+    font-family: 'Oswald';
+    font-weight: @i*100;
+    font-style: normal;
+    src: url('../fonts/oswaldmedium.woff2') format('woff2');
+  }
+    .allFontsWoff2(@i+1);
+}
+.allFontsWoff2 (1);
+.allFontsWoff (@r) when (@r < 10) {
+  @font-face {
+    font-family: 'Oswald';
+    font-weight: @r*100;
+    font-style: normal;
+    src: url('../fonts/oswaldmedium.woff') format('woff');
+  }
+    .allFontsWoff(@r+1);
+}
+.allFontsWoff (1);
