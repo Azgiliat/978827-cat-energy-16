@@ -1,0 +1,46 @@
+.main-nav {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-nav__button {
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  &:active ~ .main-nav__list {
+    display: block;
+  }
+  &:hover ~ .main-nav__list {
+    display: block;
+  }
+  &:focus ~ .main-nav__list {
+    display: block;
+  }
+}
+.main-nav__burger-element {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #111111;
+  margin-bottom: 5px;
+}
+.main-nav__list {
+  display: block;
+  list-style: none;
+  padding: 2px;
+  width: 100%;
+}
+.main-nav__link {
+  text-decoration: none;
+  font-family: @main-font;
+  color: @prg-dscr-color;
+  line-height: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.main-nav__item {
+  display: block;
+  text-align: center;
+  margin: 23px auto;
+}
