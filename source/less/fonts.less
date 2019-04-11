@@ -1,22 +1,12 @@
-.allFontsWoff2 (@i) when (@i < 3) {
+.allFonts (@i) when (@i < 3) {
   @font: extract(@font-bold, @i);
   @font-face {
     font-family: 'Oswald';
     font-weight: (@i+3)*100;
     font-style: normal;
-    src: url('../fonts/oswald@{font}.woff2') format('woff2');
+    src: url('../fonts/oswald@{font}.woff2') format('woff2'),
+    url('../fonts/oswald@{font}.woff') format('woff');
   }
-  .allFontsWoff2(@i+1);
+  .allFonts(@i+1);
 }
-.allFontsWoff2(1);
-.allFontsWoff (@i) when (@i < 3) {
-  @font: extract(@font-bold, @i);
-  @font-face {
-    font-family: 'Oswald';
-    font-weight: (@i+3)*100;
-    font-style: normal;
-    src: url('../fonts/oswald@{font}.woff') format('woff');
-  }
-  .allFontsWoff(@i+1);
-}
-.allFontsWoff(1);
+.allFonts(1);
