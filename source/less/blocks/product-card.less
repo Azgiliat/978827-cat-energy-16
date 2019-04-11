@@ -1,0 +1,42 @@
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card__link:nth-child(1) {
+  order: 1;
+  display: inline-block;
+}
+.product-card__img {
+  width: 140px;
+  height: 144px;
+}
+.product-card__text-info {
+  order: 2;
+  flex-grow: 1;
+}
+.product-card__header {
+  font-family: @main-font;
+  color: @prg-dscr-color;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 76px;
+  margin: 1px;
+  font-weight: normal;
+}
+.product-card__description {
+  margin-top: 20px;
+}
+.product-card__table {
+  font-family: @sub-font;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+}
+.product-card__cell:nth-child(2n) {
+  text-align: right;
+}
+.product-card__button {
+  display: block;
+  width: 100%;
+  order: 4;
+}

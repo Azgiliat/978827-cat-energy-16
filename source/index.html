@@ -5,18 +5,22 @@
     <meta name="keywords" content="Cat-Energy Cat Котэ Кот Еда Котов магазин">
     <meta name="description" content="Магазин вкусной и полезный еды для ваших любимых пушистосов">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="container">
     <h1 class="visually-hidden">Магазин для котов</h1>
       <header class="page-header">
-        <a class="page-header__link page-header__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
-          <img class="main-logo page-header__main-logo main-logo--mobile" src="" alt="Логотип магазина">
-        </a>
-        <a class="page-header__link page-header__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
-          <img class="shop-name page-header__shop-name shop-name--mobile" src="" alt="Название магазина">
-        </a>
         <nav class="main-nav page-header__main-nav">
-          <button class="main-nav__button" type="button">Открыть меню</button>
+          <a class="page-header__link" href="index.html" aria-label="Ссылка на главную страницу магазина">
+            <img class="main-logo page-header__main-logo" src="../img/logo-mobile.svg" alt="Логотип магазина">
+          </a>
+          <button class="main-nav__button" type="button">
+            Открыть меню
+            <span class="main-nav__burger-element"></span>
+            <span class="main-nav__burger-element"></span>
+            <span class="main-nav__burger-element"></span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">главная</a>
@@ -34,24 +38,24 @@
         <section class="short-description">
           <h2 class="short-description__title">Функциональное питание для котов</h2>
           <p class="short-description__item">Занялся собой? Займись котом!</p>
-          <img class="short-description__img" src="" alt="Фотография нашего классного корма">
-          <a class="button programs__button" href="programs.html">ПОДОБРАТЬ ПРОГРАММУ</a>
+          <img class="short-description__img" src="img/index-can-mobile@1x.png" alt="Фотография нашего классного корма">
+          <a class="button short-description__button" href="programs.html">ПОДОБРАТЬ ПРОГРАММУ</a>
         </section>
         <section class="programs">
           <h2 class="visually-hidden">Наши программы</h2>
-            <div class="program-description program-description--slim">
-            <h3 class="program-description__title">ПОХУДЕНИЕ</h3>
-            <p class="program-description__text">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            </p>
-            <a class="program-description__link" href="catalog-slim.html">КАТАЛОГ SLIM</a>
-          </div>
-          <div class="program-description program-description--pro">
-            <h3 class="program-description__title">НАБОР МАССЫ</h3>
-            <p class="program-description__text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="program-description__link" href="catalog-pro.html">КАТАЛОГ PRO</a>
+            <div class="program-description programs__program-description">
+              <h3 class="program-description__title program-description__title--slim">ПОХУДЕНИЕ</h3>
+              <p class="program-description__text">
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+              </p>
+              <a class="program-description__link" href="catalog-slim.html">КАТАЛОГ SLIM</a>
+            </div>
+          <div class="program-description programs__program-description">
+              <h3 class="program-description__title program-description__title--pro">НАБОР МАССЫ</h3>
+              <p class="program-description__text">
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a class="program-description__link" href="catalog-pro.html">КАТАЛОГ PRO</a>
           </div>
         </section>
         <section class="how-it-works">
@@ -78,8 +82,8 @@
         </section>
       </main>
       <footer class="page-footer">
-        <a class="page-footer__link page-footer__link--mobile" href="index.html" aria-label="Ссылка на главную страницу магазина">
-          <img class="shop-name page-footer__shop-name" src="" alt="Название магазина">
+        <a class="page-footer__link page-footer__link" href="index.html" aria-label="Ссылка на главную страницу магазина">
+          <img class="shop-name-only page-footer__shop-name-only" src="../img/logo-footer.svg" alt="Название магазина">
         </a>
         <div class="social-networks page-footer__social-networks">
           <ul class="social-networks__list">
@@ -96,8 +100,9 @@
         </div>
         <div class="developer page-footer__developer">
           <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <img class="dev-logo developer__dev-logo" src="" alt="Логотип HTML Academy">
+          <img class="dev-logo developer__dev-logo" src="../img/htmlacademy.svg" alt="Логотип HTML Academy">
         </div>
       </footer>
+    </div>
   </body>
 </html>

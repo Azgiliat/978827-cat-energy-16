@@ -1,0 +1,12 @@
+.allFonts (@i) when (@i < 3) {
+  @font: extract(@font-bold, @i);
+  @font-face {
+    font-family: 'Oswald';
+    font-weight: (@i+3)*100;
+    font-style: normal;
+    src: url('../fonts/oswald@{font}.woff2') format('woff2'),
+    url('../fonts/oswald@{font}.woff') format('woff');
+  }
+  .allFonts(@i+1);
+}
+.allFonts(1);

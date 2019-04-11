@@ -1,0 +1,42 @@
+.how-it-works {
+  padding: 1px 24px 1px 27px;
+}
+.how-it-works__item {
+  font-family: @sub-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: @main-font-color;
+  min-height: 60px;
+  padding-left: 80px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: @green-button;
+  }
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-repeat: no-repeat;
+  }
+  &--healthy::after {
+      background-image: url('../img/advantage-leaf@1x.png');
+  }
+  &--recipe::after {
+      background-image: url('../img/advantage-powder@1x.png');
+  }
+  &--schedule::after {
+      background-image: url('../img/advantage-dining@1x.png');
+  }
+  &--time::after {
+      background-image: url('../img/advantage-clock@1x.png');
+  }
+}
