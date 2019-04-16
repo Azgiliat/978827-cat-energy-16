@@ -1,7 +1,48 @@
+.products {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -60px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: -80px;
+  }
+}
 .products__product-card {
   margin-bottom: 24px;
 }
 .products__button--grey {
   background-color: @main-bgr;
   color: @main-font-color;
+}
+.products__all-products {
+  @media (min-width: @tablet-width) {
+      padding-top: 200px;
+      width: 324px;
+  }
+  @media (min-width: @desktop-width) {
+      width: 245px;
+      padding-top: 150px;
+  }
+}
+.products__more-products {
+  @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      font-family: @main-font;
+      padding: 1px 95px;
+      text-align: center;
+  }
+  @media (min-width: @desktop-width) {
+      padding: 1px 55px;
+  }
+}
+.products__more-tastes {
+  @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      font-family: @main-font;
+      padding: 1px 75px;
+      text-align: center;
+  }
 }

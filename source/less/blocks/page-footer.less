@@ -1,9 +1,18 @@
 .page-footer {
   background-color: @main-bgr;
   padding: 2px 20px 2px 20px;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    align-items: center;
+  }
 }
 .page-footer__link {
   display: block;
   width: 128px;
   margin: 40px auto 30px auto;
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Cat-Energy Cat Котэ Кот Еда Котов магазин">
     <meta name="description" content="Каталог товаров магазина Cat Energy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="container container--catalog">
     <header class="page-header">
       <nav class="main-nav page-header__main-nav">
         <a class="page-header__link" href="index.html" aria-label="Ссылка на главную страницу магазина">
@@ -19,15 +21,15 @@
           <span class="main-nav__burger-element"></span>
           <span class="main-nav__burger-element"></span>
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">главная</a>
+            <a class="main-nav__link main-nav__link--catalog" href="index.html">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+            <a class="main-nav__link main-nav__link--catalog" href="catalog.html">каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">подбор программы</a>
+            <a class="main-nav__link main-nav__link--catalog" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -42,7 +44,7 @@
           </a>
           <div class="product-card__text-info">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+            <h3 class="product-card__header">CAT ENERGY PRO<br> 500 Г</h3>
           </a>
           <div class="product-card__description">
             <table class="product-card__table">
@@ -60,7 +62,7 @@
           </a>
           <div class="product-card__text-info">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 1000 Г</h3>
+            <h3 class="product-card__header">CAT ENERGY PRO<br> 1000 Г</h3>
           </a>
           <div class="product-card__description">
             <table class="product-card__table">
@@ -78,7 +80,7 @@
           </a>
           <div class="product-card__text-info">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+            <h3 class="product-card__header">CAT ENERGY PRO<br> 500 Г</h3>
           </a>
           <div class="product-card__description">
             <table class="product-card__table">
@@ -96,7 +98,7 @@
           </a>
           <div class="product-card__text-info">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 1000 Г</h3>
+            <h3 class="product-card__header">CAT ENERGY PRO<br> 1000 Г</h3>
           </a>
           <div class="product-card__description">
             <table class="product-card__table">
@@ -114,7 +116,7 @@
           </a>
           <div class="product-card__text-info">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+            <h3 class="product-card__header">CAT ENERGY PRO<br> 500 Г</h3>
           </a>
           <div class="product-card__description">
             <table class="product-card__table">
@@ -132,7 +134,7 @@
           </a>
           <div class="product-card__text-info">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+            <h3 class="product-card__header">CAT ENERGY PRO<br> 500 Г</h3>
           </a>
           <div class="product-card__description">
             <table class="product-card__table">
@@ -150,7 +152,7 @@
           </a>
           <div class="product-card__text-info">
           <a class="product-card__link">
-            <h3 class="product-card__header">CAT ENERGY PRO 500 Г</h3>
+            <h3 class="product-card__header">CAT ENERGY PRO<br> 500 Г</h3>
           </a>
           <div class="product-card__description">
             <table class="product-card__table">
@@ -162,9 +164,12 @@
         </div>
           <a class="button product-card__button" href="chiken-500.html">ЗАКАЗАТЬ</a>
         </section>
+        <section class="products__all-products">
+          <h3 class="visually-hidden">Показать все товары</h3>
         <p class="products__more-products">показать ещё 100500 товаров</p>
         <p class="products__more-tastes">На самом деле вкусов намного больше!</p>
         <a class="button products__button products__button--grey" href="catalog.html">показать все</a>
+      </section>
       </section>
       <section class="additional-products">
         <h2 class="additional-products__title"></h2>
@@ -192,5 +197,6 @@
         <img class="dev-logo developer__dev-logo" src="../img/htmlacademy.svg" alt="Логотип HTML Academy">
       </div>
     </footer>
+  </div>
   </body>
 </html>

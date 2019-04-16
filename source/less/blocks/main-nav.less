@@ -3,6 +3,12 @@
   flex-basis: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 .main-nav__button {
   font-size: 0;
@@ -17,6 +23,9 @@
   &:focus ~ .main-nav__list {
     display: block;
   }
+  @media (min-width: @tablet-width) {
+      display: none;
+  }
 }
 .main-nav__burger-element {
   display: block;
@@ -27,9 +36,17 @@
 }
 .main-nav__list {
   display: block;
+  width: 100%;
   list-style: none;
   padding: 2px;
-  width: 100%;
+  margin: 16px auto;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin: 20px 2px 2px 2px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .main-nav__link {
   text-decoration: none;
@@ -39,9 +56,26 @@
   line-height: 20px;
   font-size: 20px;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+  }
+  @media (min-width: @desktop-width) {
+      color: #ffffff;
+  }
+  &--catalog {
+    @media (min-width: @desktop-width) {
+      color: @main-font-color;
+    }
+  }
 }
 .main-nav__item {
   display: block;
   text-align: center;
   margin: 23px auto;
+  @media (min-width: @tablet-width) {
+      margin: 2px;
+      margin-left: 20px;
+  }
 }

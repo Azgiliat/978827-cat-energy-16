@@ -1,4 +1,30 @@
 .container {
   width: 320px;
   margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding-left: 110px;
+    padding-right: 110px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      width: 720px;
+      height: 700px;
+      z-index: -1;
+    }
+  }
+}
+.container--catalog {
+  &::after {
+    background-image: none;
+  }
 }

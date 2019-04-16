@@ -6,14 +6,24 @@
   padding: 2px;
   display: flex;
   justify-content: space-around;
+  @media (min-width: @tablet-width) {
+    min-width: 140px;
+  }
 }
 .social-networks__link {
   display: inline-block;
   width: 16px;
   height: 16px;
+  @media (min-width: @tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
   &--vk {
     background-image: url("../img/icon-vk-mobile.svg");
     background-repeat: no-repeat;
+    @media (min-width: @tablet-width) {
+      background-position: center;
+    }
     }
   &--insta {
     background-image: url("../img/icon-insta-mobile.svg");
