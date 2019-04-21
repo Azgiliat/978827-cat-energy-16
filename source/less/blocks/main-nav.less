@@ -3,30 +3,38 @@
   flex-basis: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
+
   @media (min-width: @tablet-width) {
     padding: 0;
   }
+
   @media (min-width: @desktop-width) {
     padding: 0;
   }
 }
+
 .main-nav__button {
   font-size: 0;
   border: none;
   background-color: transparent;
+
   &:active ~ .main-nav__list {
     display: block;
   }
+
   &:hover ~ .main-nav__list {
     display: block;
   }
+
   &:focus ~ .main-nav__list {
     display: block;
   }
+
   @media (min-width: @tablet-width) {
-      display: none;
+    display: none;
   }
 }
+
 .main-nav__burger-element {
   display: block;
   width: 24px;
@@ -34,20 +42,22 @@
   background-color: #111111;
   margin-bottom: 5px;
 }
+
 .main-nav__list {
   display: none;
   width: 100%;
   list-style: none;
   padding: 2px;
   margin: 16px auto;
+
   @media (min-width: @tablet-width) {
     display: flex;
     margin: 20px 2px 2px 2px;
     width: 450px;
-    display: flex;
     flex-wrap: wrap;
   }
 }
+
 .main-nav__link {
   text-decoration: none;
   font-family: @main-font;
@@ -56,32 +66,39 @@
   line-height: 20px;
   font-size: 20px;
   text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
-      font-size: 18px;
-      line-height: 20px;
-      font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
   }
+
   @media (min-width: @desktop-width) {
-      color: #ffffff;
+    color: #ffffff;
   }
+
   &--catalog {
     @media (min-width: @desktop-width) {
       color: @main-font-color;
     }
   }
 }
+
 .main-nav__item {
   display: block;
   text-align: center;
   margin: 23px auto;
+
   @media (min-width: @tablet-width) {
-      margin: 2px;
-      margin-left: 10px;
-      &:nth-child(1) {
-        margin-right: 22px;
-      }
-      &:nth-child(2) {
-        margin-right: 22px;
-      }
+    margin: 2px;
+    margin-left: 10px;
+
+    &:nth-child(1) {
+      margin-right: 22px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 22px;
+    }
   }
 }

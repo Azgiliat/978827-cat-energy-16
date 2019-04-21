@@ -1,31 +1,36 @@
 .how-it-works {
   padding: 1px 24px 1px 27px;
   margin-bottom: 50px;
-  @media (min-width: @tablet-width) {
-    padding: 0px;
-        display: flex;
-        flex-wrap: wrap;
-  }
 
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
 .how-it-works__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: -80px;
   }
 }
+
 .how-it-works__title {
   @media (min-width: @tablet-width) {
-        width: 100%;
+    width: 100%;
   }
+
   @media (min-width: @desktop-width) {
-        font-size: 60px;
-        line-height: 60px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
+
 .how-it-works__item {
   font-family: @sub-font;
   font-size: 14px;
@@ -34,39 +39,45 @@
   min-height: 60px;
   padding-left: 80px;
   position: relative;
+
   @media (min-width: @tablet-width) {
-      font-size: 16px;
-      line-height: 24px;
-      min-height: 180px;
-      padding: 1px;
-      padding-top: 110px;
-      margin-bottom: 135px;
-      margin-top: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 180px;
+    padding: 1px;
+    padding-top: 110px;
+    margin-bottom: 135px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    &:nth-child(2n) {
+      width: 210px;
+      margin-right: 175px;
     }
-    @media (min-width:@tablet-width) and (max-width:@desktop-width) {
-      &:nth-child(2n) {
-        width: 210px;
-        margin-right: 175px;
-      }
-      &:nth-child(2n+1) {
-        width: 250px;
-        margin-right: 0px;
-      }
+
+    &:nth-child(2n+1) {
+      width: 250px;
+      margin-right: 0;
     }
-    @media (min-width: @desktop-width) {
-          width: 245px;
-          margin-right: 80px;
-          margin-bottom: 40px;
-    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+  }
+
   &::before {
     content: "";
     width: 80px;
     height: 80px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: @green-button;
   }
+
   &::after {
     content: "";
     width: 50px;
@@ -76,21 +87,27 @@
     left: 15px;
     background-repeat: no-repeat;
   }
+
   &--healthy::after {
-      background-image: url('../img/advantage-leaf@1x.png');
+    background-image: url("../img/advantage-leaf@1x.png");
   }
+
   &--recipe::after {
-      background-image: url('../img/advantage-powder@1x.png');
+    background-image: url("../img/advantage-powder@1x.png");
   }
+
   &--schedule::after {
-      background-image: url('../img/advantage-dining@1x.png');
+    background-image: url("../img/advantage-dining@1x.png");
   }
+
   &--time::after {
-      background-image: url('../img/advantage-clock@1x.png');
+    background-image: url("../img/advantage-clock@1x.png");
   }
 }
+
 .how-it-works__number {
   display: none;
+
   @media (min-width: @tablet-width) {
     display: block;
     position: absolute;

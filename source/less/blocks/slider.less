@@ -1,50 +1,60 @@
 .picture-after {
   display: none;
 }
+
 .slider__input:nth-child(1):checked ~ .picture-before {
   display: block;
   animation-name: opacity-up;
   animation-duration: 2s;
 }
+
 .slider__input:nth-child(1):checked ~ .slider__label-after::after {
   animation-name: before-scale;
   animation-duration: 2s;
   transform: scaleX(1);
 }
+
 .slider__input:nth-child(1):checked ~ .picture-after {
   animation-name: opacity-down;
   animation-duration: 2s;
   display: none;
 }
+
 .slider__input:nth-child(2):checked ~ .picture-after {
   display: block;
   animation-name: opacity-up;
   animation-duration: 2s;
 }
+
 .slider__input:nth-child(2):checked ~ .slider__label-after::after {
   animation-name: after-scale;
   animation-duration: 2s;
   transform: scaleX(2);
 }
+
 .slider__input:nth-child(2):checked ~ .picture-before {
   display: none;
   animation-name: opacity-down;
   animation-duration: 2s;
 }
+
 .slider__img {
   width: 311px;
   height: 232px;
   margin-bottom: 40px;
 }
+
 .slider label {
   font-family: @main-font;
   line-height: 20px;
   font-size: 16px;
   text-transform: uppercase;
 }
+
 .slider__label-after {
   padding-left: 115px;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -56,6 +66,7 @@
     left: 10px;
     background-color: #ffffff;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -65,9 +76,10 @@
     left: 19px;
     background-color: @green-button;
     border-radius: 30px;
-      transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
   }
 }
+
 .slider__label-before {
   margin-left: 65px;
 }

@@ -1,22 +1,27 @@
 .program-description {
   background-color: @main-bgr;
   padding: 24px 22px;
+
   @media (min-width: @tablet-width) {
-      padding-top: 70px;
-      padding-left: 55px;
-      padding-bottom: 55px;
-      &--slim {
-        padding-right: 275px;
-      }
-      &--pro {
-        padding-right: 310px;
-      }
+    padding-top: 70px;
+    padding-left: 55px;
+    padding-bottom: 55px;
+
+    &--slim {
+      padding-right: 275px;
+    }
+
+    &--pro {
+      padding-right: 310px;
+    }
   }
+
   @media (min-width: @desktop-width) {
     padding: 50px;
     width: 570px;
   }
 }
+
 .program-description__title {
   font-size: 24px;
   line-height: 37px;
@@ -28,15 +33,18 @@
   min-height: 51px;
   padding: 10px 2px 2px 70px;
   position: relative;
+
   @media (min-width: @tablet-width) {
-      font-size: 36px;
-      line-height: 37px;
-      padding: 1px;
+    font-size: 36px;
+    line-height: 37px;
+    padding: 1px;
   }
+
   @media (min-width: @desktop-width) {
     text-align: center;
     padding-left: 100px;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -46,22 +54,25 @@
     height: 50px;
     background-color: @green-button;
     border-radius: 50%;
+
     @media (min-width: @tablet-width) {
-        width: 200px;
-        height: 200px;
-        top: 15px;
-        left: 390px;
+      width: 200px;
+      height: 200px;
+      top: 15px;
+      left: 390px;
     }
+
     @media (min-width: @desktop-width) {
-        width: 100px;
-        height: 100px;
-        top: -25px;
-        left: 0px;
+      width: 100px;
+      height: 100px;
+      top: -25px;
+      left: 0;
     }
   }
+
   &--slim {
     &::after {
-      content:"";
+      content: "";
       position: absolute;
       width: 50px;
       height: 50px;
@@ -69,23 +80,26 @@
       left: 10px;
       background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
+
       @media (min-width: @tablet-width) {
-          width: 150px;
-          height: 200px;
-          left: 420px;
-          top: 0px;
+        width: 150px;
+        height: 200px;
+        left: 420px;
+        top: 0;
       }
+
       @media (min-width: @desktop-width) {
-          width: 70px;
-          height: 100px;
-          left: 10px;
-          top: -25px;
+        width: 70px;
+        height: 100px;
+        left: 10px;
+        top: -25px;
       }
     }
   }
+
   &--pro {
     &::after {
-      content:"";
+      content: "";
       position: absolute;
       width: 67px;
       height: 28px;
@@ -93,21 +107,24 @@
       left: -10px;
       background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
+
       @media (min-width: @tablet-width) {
-          width: 270px;
-          height: 120px;
-          left: 355px;
-          top: 60px;
+        width: 270px;
+        height: 120px;
+        left: 355px;
+        top: 60px;
       }
+
       @media (min-width: @desktop-width) {
-          width: 135px;
-          height: 55px;
-          left: -20px;
-          top: -10px;
+        width: 135px;
+        height: 55px;
+        left: -20px;
+        top: -10px;
       }
     }
   }
 }
+
 .program-description__text {
   font-size: 14px;
   line-height: 18px;
@@ -115,19 +132,22 @@
   margin-top: 24px;
   margin-bottom: 35px;
   padding: 1px;
+
   @media (min-width: @tablet-width) {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: 10px;
-      margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 60px;
   }
+
   @media (min-width: @desktop-width) {
-      margin-top: 40px;
-      margin-bottom: 35px;
-      font-size: 16px;
-      line-height: 24px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
+
 .program-description__link {
   text-decoration: none;
   color: @prg-dscr-color;
@@ -137,21 +157,24 @@
   position: relative;
   display: inline-block;
   padding-right: 40px;
+
   @media (min-width: @tablet-width) {
-        font-size: 20px;
-        line-height: 24px;
-        padding-right: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 50px;
   }
+
   &::after {
     content: "";
     width: 24px;
     height: 11px;
     position: absolute;
     top: 2px;
-    right: 0px;
+    right: 0;
     background-image: url("../img/icon-right-arrow-long.svg");
+
     @media (min-width: @tablet-width) {
-        top: 7px;
+      top: 7px;
     }
   }
 }

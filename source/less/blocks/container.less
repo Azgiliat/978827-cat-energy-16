@@ -1,12 +1,15 @@
 .container {
   width: @mobile-width-content;
   margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     width: @tablet-width-content;
   }
+
   @media (min-width: @desktop-width) {
     width: @desktop-width-content;
     position: relative;
+
     &--main::after {
       content: "";
       position: absolute;
@@ -18,11 +21,13 @@
       z-index: -1;
     }
   }
+
   &--flex {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 .container--catalog {
   &::after {
     background-image: none;

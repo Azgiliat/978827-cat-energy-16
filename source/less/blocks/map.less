@@ -1,11 +1,13 @@
 .map {
   height: 362px;
 }
+
 .map .container {
   width: @mobile-width;
   height: 362px;
-  background-image: url('../img/bg-map-mobile@1x.png');
+  background-image: url("../img/bg-map-mobile@1x.png");
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -13,6 +15,6 @@
     left: calc(50% - 60px);
     width: 120px;
     height: 120px;
-    background-image: url('../img/map-pin.png');
+    background-image: url("../img/map-pin.png");
   }
 }
