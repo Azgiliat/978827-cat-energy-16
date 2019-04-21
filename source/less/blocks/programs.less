@@ -1,14 +1,20 @@
 .programs {
   @media (min-width: @tablet-width) {
       padding: 0px;
+      margin-bottom: 10px;
   }
   @media (min-width: @desktop-width) {
     display: flex;
   }
 }
 .programs__program-description {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
   @media (min-width: @desktop-width) {
+    &:nth-child(2n) {
     margin-right: 80px;
+    }
   }
 }

@@ -1,12 +1,20 @@
 .how-it-works {
   padding: 1px 24px 1px 27px;
+  margin-bottom: 50px;
   @media (min-width: @tablet-width) {
     padding: 0px;
         display: flex;
         flex-wrap: wrap;
   }
+
+}
+.how-it-works__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   @media (min-width: @desktop-width) {
-        margin-right: -80px;
+    margin-right: -80px;
   }
 }
 .how-it-works__title {
@@ -27,6 +35,8 @@
   padding-left: 80px;
   position: relative;
   @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
       min-height: 180px;
       padding: 1px;
       padding-top: 110px;
@@ -36,7 +46,7 @@
     @media (min-width:@tablet-width) and (max-width:@desktop-width) {
       &:nth-child(2n) {
         width: 210px;
-        margin-right: 170px;
+        margin-right: 175px;
       }
       &:nth-child(2n+1) {
         width: 250px;
@@ -50,8 +60,8 @@
     }
   &::before {
     content: "";
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -62,8 +72,8 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 15px;
+    left: 15px;
     background-repeat: no-repeat;
   }
   &--healthy::after {
@@ -87,9 +97,9 @@
     z-index: -1;
     font-family: @main-font;
     color: @main-bgr;
-    font-size: 235px;
-    line-height: 240px;
+    font-size: 281px;
+    line-height: 281px;
     top: -35px;
-    left: 105px;
+    left: 110px;
   }
 }

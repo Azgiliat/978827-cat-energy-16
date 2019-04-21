@@ -35,7 +35,7 @@
   margin-bottom: 5px;
 }
 .main-nav__list {
-  display: block;
+  display: none;
   width: 100%;
   list-style: none;
   padding: 2px;
@@ -76,6 +76,12 @@
   margin: 23px auto;
   @media (min-width: @tablet-width) {
       margin: 2px;
-      margin-left: 20px;
+      margin-left: 10px;
+      &:nth-child(1) {
+        margin-right: 22px;
+      }
+      &:nth-child(2) {
+        margin-right: 22px;
+      }
   }
 }
