@@ -1,10 +1,18 @@
 .live-example {
   padding-bottom: 35px;
   background-color: @main-bgr;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .live-example__header {
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .live-example .container {
@@ -15,6 +23,11 @@
 
 .live-example__not-slider {
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    margin-bottom: 52px;
+  }
 }
 
 .live-example__text {
@@ -23,6 +36,12 @@
   line-height: 18px;
   padding-right: 10px;
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
 }
 
 .live-example__description {
@@ -33,6 +52,10 @@
   margin: 0;
   margin-bottom: 30px;
 
+  @media (min-width: @tablet-width) {
+    width: 162px;
+  }
+
   &--last {
     width: 200px;
     font-size: 14px;
@@ -40,11 +63,24 @@
     text-transform: uppercase;
     font-family: @main-font;
     margin-left: 45px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      width: 180px;
+      margin-left: 153px;
+      padding-top: 15px;
+      border: none;
+      text-align: right;
+    }
   }
 }
 
 .live-example__description--first {
   margin-right: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 38px;
+  }
 }
 
 .live-example__description span:nth-child(1) {
@@ -55,6 +91,11 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .live-example__description span:nth-child(2) {
@@ -70,4 +111,14 @@
   text-align: center;
   font-size: 12px;
   line-height: 12px;
+  font-family: @sub-font;
+
+  @media (min-width: @tablet-width) {
+    width: 135px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    text-align: center;
+    top: 60px;
+  }
 }

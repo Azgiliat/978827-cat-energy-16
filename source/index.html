@@ -115,20 +115,36 @@
               </p>
             </div>
               <div class="slider live-example__slider">
-                <input class="visually-hidden slider__input" type="radio" name="slider-buttons" id="before" checked>
+                <input class="visually-hidden slider__input" type="radio" name="slider-buttons" id="half" checked>
+                <input class="visually-hidden slider__input" type="radio" name="slider-buttons" id="before">
                 <input class="visually-hidden slider__input" type="radio" name="slider-buttons" id="after">
-                <picture class="picture-before">
+                <div class="slider__half-img">
+                  <div class="slider__half-before">
+                  <picture class="slider__half-img-before">
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                    <img class="slider__img-half slider__img-half--before" src="img/before-tablet@1x.png">
+                  </picture>
+                </div>
+                <div class="slider__half-after">
+                  <picture class="slider__half-img-after">
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                    <img class="slider__img-half slider__img-half--after" src="img/after-tablet@1x.png">
+                  </picture>
+                </div>
+                </div>
+                <picture class="slider__picture-before">
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
                   <img class="slider__img slider__img--before" src="img/before-mobile@1x.png" alt="Каким был кот до диеты (ОЧЕНЬ ЖИРНЫЙ КОТ НА ФОТО)">
                 </picture>
-                <picture class="picture-after">
+                <picture class="slider__picture-after">
                   <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                  <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" alt="Каким был кот до диеты (ОЧЕНЬ ЖИРНЫЙ КОТ НА ФОТО)">
+                  <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" alt="Каким стал кот после диеты (супер-стройный котик)">
                 </picture>
               <label class="slider__label-before" for="before">было</label>
               <label class="slider__label-after" for="after">стало</label>
+              <label class="slider__label-half visually-hidden" for="half"></label>
               </div>
           </div>
         </section>
