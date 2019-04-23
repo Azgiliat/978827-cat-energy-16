@@ -1,3 +1,9 @@
+.social-networks {
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+  }
+}
+
 .social-networks__list {
   list-style: none;
   padding: 2px;
@@ -7,7 +13,10 @@
   justify-content: space-around;
 
   @media (min-width: @tablet-width) {
-    min-width: 140px;
+    width: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
   }
 }
 
@@ -30,12 +39,21 @@
 
     @media (min-width: @tablet-width) {
       background-position: center;
+      background-size: 30px 16px;
+      width: 30px;
+      height: 16px;
     }
   }
 
   &--insta {
     background-image: url("../img/icon-insta-mobile.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      background-position: center;
+      width: 23px;
+      height: 23px;
+    }
   }
 
   &--facebook {
@@ -44,5 +62,12 @@
     background-size: 10px 19px;
     width: 10px;
     height: 19px;
+
+    @media (min-width: @tablet-width) {
+      background-position: center;
+      background-size: 14px 28px;
+      width: 14px;
+      height: 28px;
+    }
   }
 }

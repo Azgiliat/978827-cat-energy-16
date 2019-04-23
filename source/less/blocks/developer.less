@@ -1,6 +1,11 @@
 .developer {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    margin: 0;
+  }
 }
 
 .developer__link {
@@ -13,6 +18,7 @@
 
   @media (min-width: @tablet-width) {
     align-self: center;
+    margin-top: 0;
   }
 }
 
@@ -21,7 +27,7 @@
   height: 45px;
 
   @media (min-width: @tablet-width) {
-    width: 30px;
-    height: 40px;
+    width: 40px;
+    height: 47px;
   }
 }

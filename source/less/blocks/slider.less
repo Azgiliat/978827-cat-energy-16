@@ -81,15 +81,26 @@
 }
 
 .slider label {
+  display: inline-block;
   font-family: @main-font;
   line-height: 20px;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    line-height: 24px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 
 .slider__label-after {
   padding-left: 115px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 470px;
+  }
 
   &::before {
     content: "";
@@ -118,6 +129,10 @@
 
 .slider__label-before {
   margin-left: 65px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+  }
 }
 
 .slider__input:nth-child(1) {
