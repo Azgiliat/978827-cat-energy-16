@@ -56,6 +56,11 @@
     width: 450px;
     flex-wrap: wrap;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+    padding-right: 0;
+  }
 }
 
 .main-nav__link {
@@ -75,6 +80,8 @@
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   &--catalog {
@@ -99,6 +106,18 @@
 
     &:nth-child(2) {
       margin-right: 22px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+
+    &:nth-child(1) {
+      margin-right: 37px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 28px;
     }
   }
 }
