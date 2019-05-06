@@ -5,12 +5,22 @@
     margin-left: 15px;
     height: 517px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 90px;
+    margin-right: -30px;
+  }
 }
 
 .slider__picture-before {
   @media (min-width: @tablet-width) {
     margin-left: 15px;
     height: 517px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 90px;
+    margin-right: -30px;
   }
 }
 
@@ -179,4 +189,10 @@
 
 .slider__img-half--after {
   margin-left: -345px;
+}
+
+.slider {
+  @media (min-width: @desktop-width) {
+    width: 710px;
+  }
 }
