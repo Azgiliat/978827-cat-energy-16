@@ -4,37 +4,26 @@
 
   @media (min-width: @tablet-width) {
     display: inline-flex;
+    vertical-align: middle;
     flex-direction: column;
     width: 324px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 35px;
     position: relative;
     background-color: @main-bgr;
+    min-height: 520px;
 
     &::before {
       content: "";
       position: absolute;
       width: 100%;
-      height: 20%;
+      height: 15%;
       background-color: #ffffff;
       top: 0;
       left: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-right: 80px;
     }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
-  }
-}
-
-.product-card br {
-  @media (max-width: @tablet-width) {
-    display: none;
   }
 }
 
@@ -52,11 +41,45 @@
 .product-card__img {
   width: 140px;
   height: 144px;
+
+  &--small {
+    @media (min-width: @tablet-width) {
+      width: 324px;
+      height: 171px;
+      margin-top: 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 245px;
+    }
+  }
+
+  &--big {
+    @media (min-width: @tablet-width) {
+      width: 324px;
+      height: 208px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 245px;
+    }
+  }
 }
 
 .product-card__text-info {
   order: 2;
   flex-grow: 1;
+  padding: 1px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+    flex-grow: 0;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+  }
 }
 
 .product-card__header {
@@ -77,6 +100,19 @@
   }
 }
 
+.product-card__header span {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.product-card__description {
+  @media (min-width: @tablet-width) {
+    margin: 0 35px;
+    padding: 1px;
+  }
+}
+
 .product-card__table {
   font-family: @sub-font;
   font-size: 12px;
@@ -86,7 +122,10 @@
   border-spacing: 0;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 35px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: normal;
+    border-spacing: 0 14px;
   }
 }
 
@@ -100,7 +139,11 @@
 
 .product-card__button {
   display: block;
-  width: 100%;
   order: 4;
   margin-top: -5px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-top: 0;
+  }
 }
