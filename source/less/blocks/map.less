@@ -9,19 +9,19 @@
 .map .container {
   width: @mobile-width;
   height: 362px;
-  background-image: url("/img/bg-map-mobile@1x.png");
+  background-image: url("img/bg-map-mobile@1x.png");
   position: relative;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     height: 400px;
-    background-image: url("/img/bg-map-tablet@1x.png");
+    background-image: url("img/bg-map-tablet@1x.png");
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
     max-width: 1440px;
-    background-image: url("/img/bg-map-desktop@1x.png");
+    background-image: url("img/bg-map-desktop@1x.png");
   }
 
   &::after {
@@ -31,7 +31,7 @@
     left: calc(50% - 60px);
     width: 120px;
     height: 120px;
-    background-image: url("/img/map-pin.png");
+    background-image: url("img/map-pin.png");
     background-repeat: no-repeat;
 
     @media (min-width: @desktop-width) {
