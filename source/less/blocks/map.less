@@ -1,27 +1,20 @@
-.map {
-  height: 362px;
-
-  @media (min-width: @tablet-width) {
-    height: 400px;
-  }
-}
-
-.map .container {
-  width: @mobile-width;
+.map-wrapper {
+  margin: 0 auto;
+  background-repeat: no-repeat;
   height: 362px;
   background-image: url("/img/bg-map-mobile@1x.png");
   position: relative;
+  max-width: @mobile-width-content;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
     height: 400px;
     background-image: url("/img/bg-map-tablet@1x.png");
+    max-width: @tablet-width-content;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
-    max-width: 1440px;
     background-image: url("/img/bg-map-desktop@1x.png");
+    max-width: @desktop-width-content;
   }
 
   &::after {
