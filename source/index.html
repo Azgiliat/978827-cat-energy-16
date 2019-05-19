@@ -26,7 +26,7 @@
             <span class="main-nav__burger-element"></span>
             <span class="main-nav__burger-element"></span>
           </button>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--open menu-close-animation menu-close">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">главная</a>
             </li>
@@ -149,15 +149,17 @@
           </div>
         </section>
         <section class="map">
+          <div class="container">
           <section class="partnership">
           <h2 class="partnership__title visually-hidden">Сотрудничество с нами</h2>
-            <div class="container">
               <p class="partnership__dealers">Приглашаем к сотрудничеству дилеров!</p>
               <p class="partnership__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербур</p>
-            </div>
           </section>
+        </div>
           <h2 class="visually-hidden">Наше местоположение</h2>
           <div class="map-wrapper">
+            <iframe class="map__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2998170488842!2d30.322251244561066!3d59.938785392383956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558263657478!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
           </div>
         </section>
       </main>
@@ -185,5 +187,6 @@
         </div>
       </div>
       </footer>
+      <script src="js/menu-open.js"></script>
   </body>
 </html>

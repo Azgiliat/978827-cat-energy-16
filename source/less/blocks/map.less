@@ -1,20 +1,37 @@
+.map {
+  @media (min-width: @tablet-width) {
+    margin-top: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.map__interactive-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 30;
+}
+
 .map-wrapper {
-  margin: 0 auto;
   background-repeat: no-repeat;
   height: 362px;
   background-image: url("/img/bg-map-mobile@1x.png");
+  background-position: center;
   position: relative;
-  max-width: @mobile-width-content;
+  max-width: 100%;
 
   @media (min-width: @tablet-width) {
     height: 400px;
     background-image: url("/img/bg-map-tablet@1x.png");
-    max-width: @tablet-width-content;
+    max-width: 100%;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("/img/bg-map-desktop@1x.png");
-    max-width: @desktop-width-content;
+    max-width: 100%;
   }
 
   &::after {

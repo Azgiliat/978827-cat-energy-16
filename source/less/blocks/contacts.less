@@ -32,6 +32,11 @@
     width: 590px;
     margin-bottom: 80px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    width: 550px;
+  }
 }
 
 .contacts__item {
@@ -46,6 +51,18 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-flex;
+    vertical-align: top;
+    margin-left: 0;
+    width: 570px;
+    margin-right: 0;
+
+    &:nth-child(2n+1) {
+      margin-left: 75px;
     }
   }
 }

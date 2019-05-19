@@ -4,11 +4,6 @@
 
   @media (min-width: @tablet-width) {
     width: @tablet-width-content;
-
-    &--common-info {
-      padding-left: 40px;
-      padding-right: 35px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -55,6 +50,17 @@
     @media (min-width: @tablet-width) {
       display: inline-block;
       width: 200px;
+    }
+  }
+
+  &--common-info {
+    @media (min-width: @tablet-width) {
+      padding-left: 40px;
+      padding-right: 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0;
     }
   }
 }

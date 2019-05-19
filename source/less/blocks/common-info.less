@@ -1,3 +1,10 @@
+.common-info {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .common-info__text {
   font-family: @main-font;
   font-size: 14px;
@@ -10,6 +17,11 @@
     font-size: 20px;
     line-height: 28px;
     width: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding-right: 840px;
   }
 }
 
