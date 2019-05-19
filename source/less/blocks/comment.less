@@ -1,0 +1,47 @@
+.comment {
+  position: relative;
+
+  &::before {
+    .green-string;
+    top: 10px;
+
+    @media (min-width: @tablet-width) {
+      top: 25px;
+    }
+  }
+}
+
+.comment__header {
+  font-family: @main-font;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+  width: 140px;
+  padding-right: 17px;
+  margin: 0;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 40px;
+    padding-left: 40px;
+    width: 260px;
+    margin-bottom: 75px;
+  }
+}
+
+.comment__text {
+  min-height: 150px;
+  width: 100%;
+  resize: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 40px;
+    width: 630px;
+    min-height: 175px;
+  }
+}

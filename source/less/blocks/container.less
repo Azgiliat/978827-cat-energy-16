@@ -4,6 +4,11 @@
 
   @media (min-width: @tablet-width) {
     width: @tablet-width-content;
+
+    &--common-info {
+      padding-left: 40px;
+      padding-right: 35px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -25,6 +30,32 @@
   &--flex {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  &--form-button {
+    margin-top: 35px;
+    margin-bottom: 22px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 40px;
+      margin-top: 62px;
+    }
+  }
+
+  &--adds {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &--note {
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+      width: 200px;
+    }
   }
 }
 
