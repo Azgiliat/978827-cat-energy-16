@@ -1,5 +1,5 @@
 .container {
-  width: @mobile-width-content;
+  width: @mobile-width;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -60,6 +60,15 @@
     }
 
     @media (min-width: @desktop-width) {
+      padding: 0;
+    }
+  }
+
+  &--small {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: @tablet-width) {
       padding: 0;
     }
   }

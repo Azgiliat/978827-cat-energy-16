@@ -20,7 +20,7 @@
   width: 165px;
   padding-right: 17px;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
   position: relative;
   z-index: 10;
   background-color: #ffffff;
@@ -41,7 +41,7 @@
 
 .adds__item {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 7px;
 
   @media (min-width: @tablet-width) {
     margin-right: 120px;
@@ -54,7 +54,32 @@
 }
 
 .adds__title {
-  margin-left: 15px;
+  padding-left: 45px;
+  display: block;
+  height: 35px;
+  padding-top: 8px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 2px solid @main-bgr;
+  }
+}
+
+.adds__input:checked ~ .adds__title::after {
+  content: "";
+  top: 10px;
+  left: 5px;
+  position: absolute;
+  width: 25px;
+  height: 15px;
+  background-image: url("/img/icon-tick.svg");
+  background-repeat: no-repeat;
 }
 
 .adds__wrapper {
