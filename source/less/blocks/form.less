@@ -1,16 +1,24 @@
 .form {
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 105px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
+  }
 }
 
 .form__contacts {
   margin-top: 55px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 45px;
+    margin-top: 50px;
   }
 }
 
@@ -18,11 +26,23 @@
   margin-top: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 65px;
+    margin-top: 60px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 40px;
+  }
+}
+
+.form__button {
+  @media (min-width: @tablet-width) {
+    margin-left: 38px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 85px;
   }
 }
 
@@ -51,6 +71,11 @@
   font-size: 14px;
   line-height: 16px;
   margin: 0;
-  margin-top: 22px;
+  margin-top: 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-top: 15px;
+  }
 }

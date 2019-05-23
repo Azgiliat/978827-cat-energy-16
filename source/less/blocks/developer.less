@@ -5,6 +5,8 @@
   @media (min-width: @tablet-width) {
     width: 162px;
     margin: 0;
+    align-items: flex-start;
+    justify-content: space-around;
   }
 }
 
@@ -17,17 +19,11 @@
   margin-top: 15px;
 
   @media (min-width: @tablet-width) {
-    align-self: center;
-    margin-top: 0;
+    align-self: flex-start;
+    margin-top: 15px;
   }
-}
 
-.developer__dev-logo {
-  width: 40px;
-  height: 45px;
-
-  @media (min-width: @tablet-width) {
-    width: 40px;
-    height: 47px;
+  &:active {
+    opacity: 0.3;
   }
 }

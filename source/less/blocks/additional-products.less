@@ -9,7 +9,7 @@
 }
 
 .additional-products {
-  margin-top: 65px;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
     margin-top: 10px;
@@ -35,10 +35,15 @@
 .additional-products__title {
   font-family: @main-font;
   font-weight: normal;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 250px;
 
   @media (min-width: @tablet-width) {
     display: inline-block;
+    width: 410px;
     font-size: 36px;
     line-height: 39px;
     margin: 0;
@@ -52,5 +57,15 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
+    width: 380px;
+    position: relative;
+
+    &::before {
+      .green-string;
+      width: 48px;
+      background-color: #ffffff;
+      top: 22px;
+      left: -45px;
+    }
   }
 }

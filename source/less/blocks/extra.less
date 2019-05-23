@@ -1,10 +1,36 @@
 .extra {
-  @media (min-width: @desktop-width) {
-    margin-bottom: 80px;
-    position: relative;
+  position: relative;
 
-    &::before {
-      .green-string;
+  &::before {
+    .green-string;
+    top: 13px;
+
+    @media (min-width: @tablet-width) {
+      top: 25px;
     }
+
+    @media (min-width: @desktop-width) {
+      top: 37px;
+    }
+  }
+
+  &::after {
+    .green-string;
+    background-color: #ffffff;
+    width: 50%;
+    left: 0;
+    top: 13px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
   }
 }

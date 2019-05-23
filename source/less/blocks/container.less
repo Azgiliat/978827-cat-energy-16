@@ -10,15 +10,32 @@
     width: @desktop-width-content;
     position: relative;
 
+    &--main::before {
+      content: "";
+      position: absolute;
+      top: -55px;
+      left: 49.3%;
+      width: 50vw;
+      height: 700px;
+      z-index: -2;
+      background-color: #64a83b;
+    }
+
     &--main::after {
       content: "";
       position: absolute;
       top: -55px;
-      right: -110px;
+      left: 49.3%;
       background-image: url("../img/index-background-desktop@1x.jpg");
-      width: 720px;
+      background-repeat: no-repeat;
+      width: 50vw;
       height: 700px;
       z-index: -1;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 50vw auto;
+      }
     }
   }
 
@@ -35,7 +52,11 @@
       display: flex;
       flex-wrap: wrap;
       padding-left: 40px;
-      margin-top: 62px;
+      margin-top: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 30px;
     }
   }
 
@@ -53,6 +74,15 @@
     }
   }
 
+  &--small {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
+  }
+
   &--common-info {
     @media (min-width: @tablet-width) {
       padding-left: 40px;
@@ -64,12 +94,29 @@
     }
   }
 
-  &--small {
-    padding-left: 20px;
-    padding-right: 20px;
+  &--no-img {
+    @media (min-width: @desktop-width) {
+      &::after {
+        background-image: none;
+      }
+    }
+  }
 
+  &--slider {
     @media (min-width: @tablet-width) {
-      padding: 0;
+      width: @tablet-width;
+      padding: 0 30px 0 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: @desktop-width;
+      padding: 0 40px 0 40px;
+    }
+  }
+
+  &--no-bgr {
+    &::before {
+      display: none;
     }
   }
 }

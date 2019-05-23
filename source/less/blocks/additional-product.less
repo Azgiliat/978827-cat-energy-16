@@ -8,11 +8,18 @@
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
+    border: 1px solid @main-bgr;
+    margin-bottom: 0;
+    padding-bottom: 28px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    max-width: 895px;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -27,6 +34,11 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
   }
 }
 
@@ -37,23 +49,43 @@
 
   @media (min-width: @tablet-width) {
     width: 220px;
-    align-self: flex-end;
+    align-self: flex-start;
+    margin-top: 27px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 10px;
+    width: 285px;
+    margin-right: 40px;
   }
 }
 
 .additional-product__cell:nth-child(2) {
   text-align: right;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+  }
+}
+
+.additional-product__cell:nth-child(1) {
+  @media (min-width: @tablet-width) {
+    text-align: right;
+    padding-right: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
 
 .additional-product__button {
   margin-top: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
+    margin-top: 15px;
     width: 100%;
   }
 

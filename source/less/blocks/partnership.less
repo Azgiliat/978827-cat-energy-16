@@ -10,20 +10,22 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    left: 105px;
+    left: 0;
     top: 92px;
     width: 570px;
     height: 200px;
     z-index: 35;
     background-color: #ffffff;
     padding-left: 40px;
-    padding-top: 70px;
+    padding-top: 65px;
+    padding-bottom: 0;
     margin: 0;
   }
 }
 
 .partnership__dealers {
   font-family: @main-font;
+  font-size: 16px;
   text-transform: uppercase;
   display: inline-block;
   width: 138px;
@@ -35,10 +37,6 @@
     margin-left: 40px;
     width: 165px;
   }
-
-  @media (min-width: @desktop-width) {
-    width: 150px;
-  }
 }
 
 .partnership__adress {
@@ -48,8 +46,8 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    line-height: 25px;
-    font-size: 17px;
+    line-height: 20px;
+    font-size: 16px;
     margin-left: 280px;
     margin-right: 20px;
     width: 180px;
@@ -57,7 +55,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 90px;
+    margin-left: 75px;
     text-align: left;
+  }
+}
+
+.partnership__word {
+  display: block;
+}
+
+.partnership__block {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 19px;
   }
 }

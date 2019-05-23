@@ -10,6 +10,10 @@ var server = require("browser-sync").create();
 var del = require("del");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+var csso = require("gulp-csso");
+var cssmin = require('gulp-cssmin');
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -27,6 +31,20 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("min-css", function () {
+  return gulp.src("source/**/style.css")
+        .pipe(cssmin())
+        .pipe(rename("style-min.css"))
+        .pipe(gulp.dest("build/css"));
+});
+
+gulp.task("sprite", function() {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({inlineSvg: true}))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -35,6 +53,8 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(cssmin())
+    .pipe(rename("style-min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -56,7 +76,7 @@ gulp.task("copy", function() {
   .pipe(gulp.dest("build"))
 });
 
-gulp.task("build_this", gulp.series("clean", "css","webp","images" , "copy"));
+gulp.task("build_this", gulp.series("clean", "css","sprite", "webp","images" , "copy"));
 
 gulp.task("update", function(done) {
   server.reload();
