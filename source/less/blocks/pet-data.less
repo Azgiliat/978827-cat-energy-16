@@ -1,0 +1,71 @@
+.pet-data {
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.pet-data__item {
+  display: flex;
+  min-height: 45px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.pet-data__pet-years {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.pet-data__input {
+  flex-grow: 1;
+  min-width: 20px;
+  border: solid 1px rgba(205, 205, 205, 0.5);
+  font-family: @main-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 15px 12px;
+  height: 45px;
+
+  &::placeholder {
+    font-family: @main-font;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &:hover {
+    border: solid 1px rgba(205, 205, 205, 1);
+  }
+
+  &:active,
+  &:focus {
+    border: solid 2px #444444;
+    outline: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+    padding: 10px 20px;
+    padding-top: 17px;
+  }
+}
+
+.pet-data__title {
+  align-self: center;
+  margin-right: 15px;
+}
+
+.pet-data__title--big {
+  min-width: 95px;
+}

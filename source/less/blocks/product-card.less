@@ -1,42 +1,150 @@
 .product-card {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    display: inline-flex;
+    vertical-align: middle;
+    flex-direction: column;
+    width: 324px;
+    position: relative;
+    background-color: @main-bgr;
+    min-height: 520px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 15%;
+      background-color: #ffffff;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    min-height: 510px;
+  }
 }
+
 .product-card__link:nth-child(1) {
   order: 1;
   display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0 auto;
+    z-index: 2;
+  }
 }
+
 .product-card__img {
   width: 140px;
   height: 144px;
+
+  &--small {
+    @media (min-width: @tablet-width) {
+      width: 324px;
+      height: 171px;
+      margin-top: 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 245px;
+    }
+  }
+
+  &--big {
+    @media (min-width: @tablet-width) {
+      width: 324px;
+      height: 208px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 245px;
+    }
+  }
 }
+
 .product-card__text-info {
   order: 2;
   flex-grow: 1;
+  padding: 1px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+    flex-grow: 0;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+  }
 }
+
 .product-card__header {
   font-family: @main-font;
   color: @prg-dscr-color;
   font-size: 16px;
   line-height: 20px;
   max-width: 76px;
-  margin: 1px;
-  font-weight: normal;
-}
-.product-card__description {
+  margin: 0;
   margin-top: 20px;
+  font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: none;
+    text-align: center;
+  }
 }
+
+.product-card__header span {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.product-card__description {
+  @media (min-width: @tablet-width) {
+    margin: 0 35px;
+    padding: 1px;
+  }
+}
+
 .product-card__table {
   font-family: @sub-font;
   font-size: 12px;
   line-height: 16px;
   width: 100%;
+  margin-top: 10px;
+  border-spacing: 0;
+
+  @media (min-width: @tablet-width) {
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: normal;
+    border-spacing: 0 14px;
+  }
 }
+
+.product-card__string {
+  height: 16px;
+}
+
 .product-card__cell:nth-child(2n) {
   text-align: right;
 }
+
 .product-card__button {
   display: block;
-  width: 100%;
   order: 4;
+  margin-top: -5px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-top: 0;
+  }
 }

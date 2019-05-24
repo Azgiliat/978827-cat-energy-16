@@ -1,0 +1,82 @@
+.program-switch {
+  @media (min-width: @tablet-width) {
+    border: 1px solid @main-bgr;
+    padding: 25px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    padding-top: 26px;
+  }
+}
+
+.program-switch__item {
+  display: block;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 13px;
+  }
+
+  &:hover .program-switch__title::before,
+  &:focus .program-switch__title::before {
+    border: solid 1px rgba(186, 186, 186, 1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program-switch__title {
+  padding-left: 30px;
+  margin-left: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: solid 1px rgba(205, 205, 205, 1);
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: -2px;
+      left: 2px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-left: 62px;
+    padding-top: 7px;
+    display: block;
+    min-height: 40px;
+  }
+}
+
+.program-switch__input {
+  &:checked ~ .program-switch__title::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: @green-button;
+
+    @media (min-width: @tablet-width) {
+      width: 18px;
+      height: 18px;
+      top: 9px;
+      left: 14px;
+    }
+  }
+}

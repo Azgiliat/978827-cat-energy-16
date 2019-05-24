@@ -3,34 +3,56 @@
   flex-basis: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
+
 .main-nav__button {
   font-size: 0;
   border: none;
   background-color: transparent;
-  &:active ~ .main-nav__list {
-    display: block;
-  }
-  &:hover ~ .main-nav__list {
-    display: block;
-  }
-  &:focus ~ .main-nav__list {
-    display: block;
+  padding: 0;
+  margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
+
 .main-nav__burger-element {
   display: block;
   width: 24px;
   height: 2px;
   background-color: #111111;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
+
 .main-nav__list {
-  display: block;
+  display: none;
+  width: 100%;
   list-style: none;
   padding: 2px;
-  width: 100%;
+  margin: 16px auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin: 20px 2px 2px 2px;
+    width: 450px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+    padding-right: 0;
+  }
 }
+
 .main-nav__link {
   text-decoration: none;
   font-family: @main-font;
@@ -39,9 +61,73 @@
   line-height: 20px;
   font-size: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &--catalog {
+    @media (min-width: @desktop-width) {
+      color: @main-font-color;
+    }
+  }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      color: @main-font-color;
+    }
+  }
 }
+
 .main-nav__item {
   display: block;
   text-align: center;
   margin: 23px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 2px;
+    margin-left: 10px;
+
+    &:nth-child(1) {
+      margin-right: 22px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 22px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+
+    &:nth-child(1) {
+      margin-right: 37px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 28px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__list--open {
+  @media (max-width: calc(@tablet-width - 1px)) {
+    display: block;
+  }
 }

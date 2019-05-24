@@ -1,0 +1,19 @@
+.dev-logo {
+  &:hover .dev-logo__svg {
+    fill: @green-button;
+  }
+
+  &:active .dev-logo__svg {
+    opacity: 0.3;
+  }
+}
+
+.dev-logo__svg {
+  width: 40px;
+  height: 45px;
+
+  @media (min-width: @tablet-width) {
+    width: 45px;
+    height: 55px;
+  }
+}

@@ -1,4 +1,21 @@
 .main-logo {
   width: 190px;
   height: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

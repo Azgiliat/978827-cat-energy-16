@@ -1,0 +1,16 @@
+.menu-show {
+  @media (max-width: calc(@tablet-width - 1px)) {
+    transform-origin: 50% 0%;
+    animation-name: show-menu;
+    animation-duration: 2s;
+    display: block;
+  }
+}
+
+.menu-close {
+  @media (max-width: calc(@tablet-width - 1px)) {
+    animation-name: close-menu;
+    animation-duration: 2s;
+    display: none;
+  }
+}

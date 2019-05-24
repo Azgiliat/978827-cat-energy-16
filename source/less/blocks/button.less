@@ -1,11 +1,110 @@
 .button {
   text-decoration: none;
   display: block;
+  border: none;
   background-color: @green-button;
   font-size: 13.5px;
   font-family: @main-font;
-  line-height: 18px;
+  line-height: 16px;
   color: #ffffff;
   text-align: center;
   padding: 11px 2px 14px 2px;
+  width: 280px;
+  min-height: 40px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 248px;
+    min-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  &--catalog {
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      min-height: 35px;
+      padding-top: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 170px;
+    }
+  }
+
+  &--grey {
+    background-color: #f2f2f2;
+    color: @main-font-color;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  &--products {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 1px;
+    padding-top: 15px;
+    width: 100%;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      width: 248px;
+      padding-top: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 165px;
+      padding-top: 5px;
+    }
+  }
+
+  &--extra {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    height: 38px;
+
+    @media (min-width: @tablet-width) {
+      height: 40px;
+      min-height: 30px;
+      padding-top: 10px;
+    }
+  }
+
+  &--form {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    padding: 0;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      width: 285px;
+      height: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 568px;
+    }
+  }
 }

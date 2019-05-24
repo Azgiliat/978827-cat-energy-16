@@ -1,7 +1,14 @@
 .titles {
   font-family: @main-font;
   font-size: 36px;
+  font-weight: 400;
   line-height: 60px;
   color: @prg-dscr-color;
-  margin: 2px 2px 35px 2px;
+  margin: 2px 2px 30px 2px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 75px;
+  }
 }

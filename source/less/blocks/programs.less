@@ -1,3 +1,35 @@
+.programs {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin-bottom: 75px;
+  }
+}
+
 .programs__program-description {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 8px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 }

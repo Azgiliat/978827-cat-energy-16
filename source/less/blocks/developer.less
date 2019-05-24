@@ -1,15 +1,29 @@
 .developer {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 }
+
 .developer__link {
   font-family: @sub-font;
   font-size: 16px;
   line-height: 16px;
   color: @main-font-color;
   text-decoration: none;
-}
-.developer__dev-logo {
-  width: 27px;
-  height: 34px;
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -1,0 +1,48 @@
+.common-info {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.common-info__text {
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-right: 15px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
+    width: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding-right: 840px;
+    line-height: 30px;
+  }
+}
+
+.common-info__pet-data {
+  margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 65px;
+  }
+}
+
+.common-info__program-switch {
+  margin-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+    margin-top: 65px;
+  }
+}
