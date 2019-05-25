@@ -18,7 +18,8 @@ var cleanCSS = require('gulp-clean-css');
 
 gulp.task("min-js", function () {
   return gulp.src( ["source/js/form-check.js",
-                    "source/js/menu-open.js"])
+                    "source/js/menu-open.js",
+                    "source/js/order.js"])
         .pipe(uglify())
         .pipe(rename({suffix:"-min"}))
         .pipe(gulp.dest("build/js"));
