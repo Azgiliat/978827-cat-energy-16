@@ -19,6 +19,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -35,7 +36,8 @@
     "img": "gulp images",
     "webp": "gulp webp",
     "sprite": "gulp sprite",
-    "minify": "gulp min-css"
+    "min-css": "gulp min-css",
+    "min-js": "gulp min-js"
   },
   "browserslist": [
     "last 2 versions",

@@ -188,7 +188,7 @@
             <img class="main-logo page-header__main-logo" src="img/logo-mobile.svg" alt="Логотип магазина">
         </picture>
         </a>
-        <button class="main-nav__button" type="button">
+        <button class="main-nav__button menu-open" type="button">
           Открыть меню
           <span class="main-nav__burger-element"></span>
           <span class="main-nav__burger-element"></span>
@@ -374,7 +374,7 @@
           <h3 class="visually-hidden">Показать все товары</h3>
         <p class="products__more-products">показать ещё 100500 товаров</p>
         <p class="products__more-tastes">На самом деле вкусов намного больше!</p>
-        <a class="button button--grey button--products button--catalog products__button" href="catalog.html">показать все</a>
+        <a class="button button--grey button--products button--catalog products__button" href="catalog-all.html">показать все</a>
       </section>
     </div>
   </div>
@@ -388,28 +388,28 @@
           <table class="additional-product__table">
             <tr class="additional-product__string"><td class="additional-product__cell">1 упаковка (100г)</td><td class="additional-product__cell">200 Р</td></tr>
           </table>
-          <a class="button button--extra additional-product__button">Заказать</a>
+          <a class="button button--extra additional-product__button" href="sugar.html">Заказать</a>
         </div>
         <div class="additional-product">
           <h3 class="additional-product__title">Питьевая вода</h3>
           <table class="additional-product__table">
             <tr class="additional-product__string"><td class="additional-product__cell">5 литров</td><td class="additional-product__cell">50 Р</td></tr>
           </table>
-          <a class="button button--extra additional-product__button">Заказать</a>
+          <a class="button button--extra additional-product__button" href="water.html">Заказать</a>
         </div>
         <div class="additional-product">
           <h3 class="additional-product__title">Молоко</h3>
           <table class="additional-product__table">
             <tr class="additional-product__string"><td class="additional-product__cell">1 литр</td><td class="additional-product__cell">100 Р</td></tr>
           </table>
-          <a class="button button--extra additional-product__button">Заказать</a>
+          <a class="button button--extra additional-product__button" href="milk.html">Заказать</a>
         </div>
         <div class="additional-product">
           <h3 class="additional-product__title">Витамины</h3>
           <table class="additional-product__table">
             <tr class="additional-product__string"><td class="additional-product__cell">1 упаковка (30г)</td><td class="additional-product__cell">300 Р</td></tr>
           </table>
-          <a class="button button--extra additional-product__button">Заказать</a>
+          <a class="button button--extra additional-product__button" href="vitamins.html">Заказать</a>
         </div>
       </section>
       <div class="present">
@@ -472,6 +472,13 @@
   </div>
 </div>
 </footer>
+    <section class="modal order">
+      <!-- Окно для заказа продукта-->
+      <button class="order__close" type="button">
+    </section>
+    <div class="modal overlay">
+    </div>
     <script src="js/menu-open-min.js"></script>
+    <script src="js/order-min.js"></script>
   </body>
 </html>

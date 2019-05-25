@@ -33,6 +33,18 @@
   margin-bottom: 6px;
 }
 
+.menu-open .main-nav__burger-element:nth-child(1) {
+  display: none;
+}
+
+.menu-open .main-nav__burger-element:nth-child(2) {
+  transform: translateY(5px) translateX(-2px) rotate(45deg);
+}
+
+.menu-open .main-nav__burger-element:nth-child(3) {
+  transform: rotate(-45deg) translateY(-3px) translateX(0);
+}
+
 .main-nav__list {
   display: none;
   width: 100%;
@@ -64,7 +76,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 25px;
     font-weight: 400;
   }
 
@@ -102,6 +114,10 @@
 
     &:nth-child(2) {
       margin-right: 22px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
     }
   }
 
