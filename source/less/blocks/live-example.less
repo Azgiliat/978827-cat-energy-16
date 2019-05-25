@@ -85,7 +85,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 }
 
@@ -93,12 +93,16 @@
   display: inline-block;
   position: relative;
   width: 125px;
-  border: solid 2px @main-bgr;
+  border: solid 1px #cdcdcd;
   margin: 0;
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     width: 162px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: solid 1px #cdcdcd;
   }
 
   &--last {
@@ -108,13 +112,13 @@
     text-transform: uppercase;
     font-family: @main-font;
     margin-left: 45px;
+    border: none;
 
     @media (min-width: @tablet-width) {
       font-size: 20px;
       width: 180px;
       margin-left: 153px;
       padding-top: 15px;
-      border: none;
       text-align: right;
     }
 
@@ -159,11 +163,11 @@
   padding-left: 13px;
   padding-right: 13px;
   z-index: 2;
-  background-color: #ffffff;
   text-align: center;
   font-size: 12px;
   line-height: 12px;
   font-family: @sub-font;
+  background-color: @main-bgr;
 
   @media (min-width: @tablet-width) {
     width: 135px;
@@ -172,6 +176,19 @@
     padding: 0;
     text-align: center;
     top: 60px;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @main-bgr;
+    top: 62px;
+  }
+
+  &--small {
+    @media (min-width: @desktop-width) {
+      width: 110px;
+      left: 25px;
+    }
   }
 }
 

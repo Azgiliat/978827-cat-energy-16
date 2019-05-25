@@ -18,8 +18,7 @@ var cleanCSS = require('gulp-clean-css');
 
 gulp.task("min-js", function () {
   return gulp.src( ["source/js/form-check.js",
-                    "source/js/menu-open.js",
-                    "source/js/order.js"])
+                    "source/js/menu-open.js"])
         .pipe(uglify())
         .pipe(rename({suffix:"-min"}))
         .pipe(gulp.dest("build/js"));
@@ -109,7 +108,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css", "update"));
+  gulp.watch("source/less/**/*.less", gulp.series("css", "min-css", "update"));
   gulp.watch("source/*.html", gulp.series("copy", "update"));
   gulp.watch("source/**/*.js", gulp.series("copy", "update"));
 });
