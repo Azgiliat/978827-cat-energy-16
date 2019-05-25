@@ -13,8 +13,8 @@ var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var csso = require("gulp-csso");
-var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
+var cleanCSS = require('gulp-clean-css');
 
 gulp.task("min-js", function () {
   return gulp.src("source/js/*.js")
@@ -61,7 +61,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(cssmin())
+    .pipe(cleanCSS())
     .pipe(rename("style-min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
